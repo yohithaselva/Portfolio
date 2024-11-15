@@ -9,6 +9,9 @@ export default {
       colors: {
         darkOrangeBrown: '#161513',
       },
+      backgroundImage: {
+        'custom-hover-gradient': 'linear-gradient(40deg, #3f0028, #58230F)',
+      },
     },
   },
   plugins: [],
