@@ -3,7 +3,7 @@ import pattern from "../assets/assets/theme_pattern.svg";
 
 const About = () => {
   return (
-    <div className="py-6 flex flex-col items-center gap-16 px-4 lg:px-20 xl:px-40">
+    <div id='about' className="py-6 flex flex-col items-center gap-16 px-4 lg:px-20 xl:px-40">
       {/* Title */}
       <div className="relative">
         <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold relative z-10 text-center lg:text-left">

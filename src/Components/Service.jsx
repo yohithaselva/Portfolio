@@ -4,7 +4,7 @@ import arrow from "../assets/assets/arrow_icon.svg";
 
 const Service = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-20 px-4 lg:px-20 xl:px-40">
+    <div id='services' className="flex flex-col items-center justify-center gap-20 px-4 lg:px-20 xl:px-40">
       {/* Header Section */}
       <div className="relative text-center">
         <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold relative z-10">

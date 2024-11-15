@@ -1,8 +1,8 @@
 import profile from "../assets/images/Profile.jpg";
-
+import AnchorLink from "react-anchor-link-smooth-scroll"
 const Hero = () => {
   return (
-    <div className="flex items-center flex-col gap-6 px-4 lg:gap-10 lg:px-0">
+    <div id='home' className="flex items-center flex-col gap-6 px-4 lg:gap-10 lg:px-0">
       {/* Profile Image */}
       <img
         src={profile}
@@ -24,10 +24,13 @@ const Hero = () => {
       </p>
 
       {/* Buttons */}
+      
       <div className="flex items-center gap-4 md:gap-8 text-sm md:text-lg lg:text-[24px] font-medium mb-10">
+      <AnchorLink offset={50} href="#contact">
         <div className="p-3 md:p-4 lg:p-[20px_40px] hover:duration-300 duration-300 rounded-full bg-gradient-to-r to-[#DF8908] from-[#B415FF] cursor-pointer hover:scale-110">
           Connect with Me
         </div>
+        </AnchorLink>
         <div className="p-3 md:p-4 lg:p-[20px_40px] hover:scale-110 rounded-full border-2 border-white cursor-pointer hover:transition hover:duration-300 duration-300 hover:border-violet-800 hover:text-yellow-500">
           My Resume
         </div>
