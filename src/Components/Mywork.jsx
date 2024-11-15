@@ -1,24 +1,41 @@
-import theme from "../assets/assets/theme_pattern.svg"
-import work from "../assets/assets/mywork_data"
-import arrow from "../assets/assets/arrow_icon.svg"
+import theme from "../assets/assets/theme_pattern.svg";
+import work from "../assets/assets/mywork_data";
+import arrow from "../assets/assets/arrow_icon.svg";
+
 const Mywork = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-[80px] m-[80px_170px]0">
-      <div className="relative">
-          <h1 className="p-[0px_30px] relative text-[80px] font-semibold z-[2]">My Latest Work</h1>
-          <img src={theme} alt="Theme Pattern" className="absolute bottom-0 right-0 z-[1]"/>
+    <div className="flex flex-col items-center justify-center gap-20 px-4 lg:px-20 xl:px-40">
+      {/* Header Section */}
+      <div className="relative text-center">
+        <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold relative z-10">
+          My Latest Work
+        </h1>
+        <img
+          src={theme}
+          alt="Theme Pattern"
+          className="absolute bottom-0 right-0 hidden lg:block z-0"
+        />
       </div>
-      <div className="grid grid-cols-3 gap-[40px]">
-          {work.map((work,index)=>{
-            return <img key={index} src={work.w_img} alt="" className="border-box w-[419px] h-[280px] duration-[0.3s] cursor-pointer"/>
-          })}
+
+      {/* Work Grid Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
+        {work.map((item, index) => (
+          <img
+            key={index}
+            src={item.w_img}
+            alt={`Work ${index + 1}`}
+            className="w-full h-auto max-w-[400px] md:max-w-none duration-300 cursor-pointer hover:scale-110 rounded-md shadow-md"
+          />
+        ))}
       </div>
-      <div className="flex gap-[15px] rounded-[50px] border-[2px] p-[20px_40px] text-[22px] font-semibold mb-[80px] duration-[0.3s] hover:gap-[30px] hover:duration-[0.3s] cursor-pointer">
-          <p>Show More</p>
-          <img src={arrow} alt="" className="mt-1"/>
+
+      {/* Show More Button */}
+      <div className="flex items-center gap-4 rounded-full border-2 border-gray-300 p-4 px-8 text-lg lg:text-2xl font-semibold mb-20 transition-all hover:gap-6 hover:border-[#ff00ff] hover:bg-custom-hover-gradient cursor-pointer">
+        <p>Show More</p>
+        <img src={arrow} alt="Arrow Icon" className="mt-1" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Mywork
+export default Mywork;
