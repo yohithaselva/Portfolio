@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 bg-darkOrangeBrown w-full text-white z-50 shadow-lg">
+      <div className="relative top-0 left-0 w-full z-50 shadow-lg">
         <div className="flex items-center justify-between px-7 py-4 sm:px-16 lg:px-40">
           {/* Logo with Hover Effect */}
           <img
@@ -90,7 +90,7 @@ const Navbar = () => {
           </ul>
 
           {/* Social Media Icons */}
-          <div className="flex gap-6 items-center">
+          <div className="flex gap-6 items-center lg:">
             <a href="https://www.linkedin.com/in/ram-pandiyar-109212299/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="text-gray-400 opacity-70 hover:text-blue-600 hover:opacity-100 transition-all duration-300 text-2xl" />
             </a>

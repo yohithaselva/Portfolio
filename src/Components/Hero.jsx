@@ -17,7 +17,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div id="home" className="flex items-center lg:pt-36 pt-24 flex-col gap-6 px-4 lg:gap-10 lg:px-0">
+    <div id="home" className="flex items-center lg:pt-14 pt-14 flex-col gap-6 px-4 lg:gap-10 lg:px-0">
       {/* Profile Image */}
       <img
         src={profile}

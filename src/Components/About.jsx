@@ -73,7 +73,7 @@ const About = () => {
       </div>
 
       {/* Statistics */}
-      <div className="flex flex-col md:flex-row justify-around items-center gap-12 md:gap-0 w-full" data-aos="fade-up">
+      <div className="flex flex-col cursor-pointer md:flex-row justify-around items-center gap-12 md:gap-0 w-full" data-aos="fade-up">
         {[{ value: "10+", label: "YEARS OF EXPERIENCE" }, { value: "100+", label: "PROJECTS COMPLETED" }, { value: "15+", label: "HAPPY CLIENTS" }].map(({ value, label }, idx) => (
           <div
             key={idx}
