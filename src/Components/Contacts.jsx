@@ -122,7 +122,7 @@ const Contacts = () => {
           />
           <button
             type="submit"
-            className="bg-btn w-[200px] text-white rounded-full text-lg font-semibold py-3 px-8 mt-4 transition-transform duration-300 hover:scale-105 flex items-center justify-center"
+            className="bg-btn w-[200px] hover:duration-300  text-white rounded-full text-lg font-semibold py-3 px-8 mt-4 transition-transform duration-300 hover:scale-105 flex items-center justify-center"
           >
             Submit Now <HiArrowRight className="ml-2 text-xl" />
           </button>

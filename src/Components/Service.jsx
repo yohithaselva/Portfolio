@@ -30,7 +30,7 @@ const Service = () => {
         {service.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center gap-5 p-6 rounded-lg border-2 border-white transition-transform hover:scale-105 hover:border-[#ff00ff] hover:bg-custom-hover-gradient cursor-pointer"
+            className="flex flex-col justify-center gap-5 p-6 rounded-lg border-2 border-white transition-transform hover:scale-105 hover:border-[#ff00ff]  cursor-pointer"
             data-aos="fade-up"
             data-aos-delay={index * 100} // Adding delay to create staggered animation
           >

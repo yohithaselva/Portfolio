@@ -42,7 +42,7 @@ const Mywork = () => {
 
       {/* Show More Button */}
       <div
-        className="flex items-center gap-4 rounded-full border-2 border-gray-300 p-4 px-8 text-lg lg:text-2xl font-semibold mb-20 transition-all hover:gap-6 hover:border-[#ff00ff] hover:bg-custom-hover-gradient duration-[0.5s] hover:duration-[0.5s] cursor-pointer"
+        className="flex items-center gap-4 rounded-full border-2 border-gray-300 p-4 px-8 text-lg lg:text-2xl font-semibold mb-20 transition-all hover:gap-6 hover:border-[#ff00ff]  duration-[0.5s] hover:duration-[0.5s] cursor-pointer"
         data-aos="fade-up"
       >
         <p>Show More</p>
