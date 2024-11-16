@@ -48,7 +48,8 @@ const Hero = () => {
         className="w-full text-center text-base md:text-lg lg:text-[24px] leading-[1.5] md:leading-[1.8] lg:leading-[1.8] md:w-[80%] lg:w-[65%]"
         data-aos="slide-up" // Slide up animation for description
       >
-        I am a frontend developer from Tamil Nadu, India with 2 years of experience in multiple companies like Microsoft, Tesla, and Apple.
+       
+I am a Front-End Developer with expertise in ReactJS, AngularJS, and Tailwind CSS. I focus on building responsive, user-friendly web applications. Motivated and eager to contribute to organizational growth while expanding my skills.
       </p>
 
       {/* Buttons */}

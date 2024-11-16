@@ -32,7 +32,7 @@ const Mywork = () => {
   key={index}
   src={item.w_img}
   alt={`Work ${index + 1}`}
-  className="w-full h-auto hover:rounded-2xl hover:border-4 max-w-[400px] md:max-w-none duration-300 cursor-pointer hover:scale-150 rounded-md shadow-md"
+  className="w-full h-auto hover:rounded-2xl hover:border-[#ff00ff] hover:border-4 max-w-[400px] md:max-w-none duration-300 cursor-pointer hover:scale-150 rounded-md shadow-md"
   data-aos="zoom-in" 
   data-aos-delay={index * 150}
 />

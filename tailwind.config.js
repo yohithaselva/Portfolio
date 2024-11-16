@@ -15,6 +15,12 @@ export default {
         'btn': 'linear-gradient(264deg, #DF8908 -5.90%, #B415FF 106.28%)',
         'service': 'linear-gradient(270deg, #DF8908 50%, #B415FF 100%)',
       },
+      borderImage: {
+        'custom-hover-gradient': 'linear-gradient(40deg, #3f0028, #58230F) 1',
+        'lets': 'linear-gradient(270deg, #DF8908 80%, #B415FF 100%) 1',
+        'btn': 'linear-gradient(264deg, #DF8908 -5.90%, #B415FF 106.28%) 1',
+        'service': 'linear-gradient(270deg, #DF8908 50%, #B415FF 100%) 1',
+      },
       fontFamily: {
         outfit: ['Outfit'], // Add the Outfit font
       },
