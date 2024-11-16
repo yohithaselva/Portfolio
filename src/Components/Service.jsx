@@ -1,19 +1,27 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import theme from "../assets/assets/theme_pattern.svg";
 import service from "../assets/assets/services_data.js";
 import arrow from "../assets/assets/arrow_icon.svg";
 
 const Service = () => {
+  useEffect(() => {
+    // Initialize AOS with 'once: false' to trigger animations every time you scroll
+    AOS.init({ duration: 1500, once: false });
+  }, []);
+
   return (
     <div id='services' className="flex flex-col items-center justify-center gap-20 px-4 lg:px-20 xl:px-40">
       {/* Header Section */}
-      <div className="relative text-center">
+      <div className="relative text-center" data-aos="fade-up">
         <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold relative z-10">
           My Service
         </h1>
         <img
           src={theme}
           alt="Theme pattern"
-          className="absolute bottom-0 right-0 hidden lg:block z-0"
+          className="absolute -bottom-3 right-0 hidden lg:block z-0"
         />
       </div>
 
@@ -23,6 +31,8 @@ const Service = () => {
           <div
             key={index}
             className="flex flex-col justify-center gap-5 p-6 rounded-lg border-2 border-white transition-transform hover:scale-105 hover:border-[#ff00ff] hover:bg-custom-hover-gradient cursor-pointer"
+            data-aos="fade-up"
+            data-aos-delay={index * 100} // Adding delay to create staggered animation
           >
             {/* Service Number */}
             <h3 className="text-lg md:text-xl lg:text-2xl font-semibold">
