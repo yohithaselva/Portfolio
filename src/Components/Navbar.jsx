@@ -22,7 +22,7 @@ const Navbar = () => {
 
   // Highlight active menu when scrolling to a section
   useEffect(() => {
-    const sections = ["home", "about", "services", "work", "contact"];
+    const sections = ["home", "about", "work", "contact"];
     const handleScroll = () => {
       let currentMenu = "home"; // default to home
       sections.forEach((section) => {
@@ -75,7 +75,7 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center gap-12 text-lg">
-            {["home", "about", "services", "work", "contact"].map((section) => (
+            {["home", "about", "work", "contact"].map((section) => (
               <li key={section} className="flex flex-col gap-1 cursor-pointer hover:scale-105 transition-transform duration-300">
                 <AnchorLink
                   href={`#${section}`}
@@ -110,7 +110,7 @@ const Navbar = () => {
           style={mobileMenuAnimation}
           className="md:hidden flex flex-col mt-20 items-center gap-4 text-lg transition-all duration-500 w-full py-4"
         >
-          {["home", "about", "services", "work", "contact"].map((section) => (
+          {["home", "about", "work", "contact"].map((section) => (
             <li key={section} className="flex flex-col gap-1 cursor-pointer hover:scale-105 transition-transform duration-300">
               <AnchorLink
                 href={`#${section}`}

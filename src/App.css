@@ -21,6 +21,19 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-dark);
 }
+/* Button styling */
+button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  transition: transform 0.5s ease-in-out; /* Ensure smooth rotation animation */
+}
+
+button.rotate {
+  transform: rotate(360deg); /* Complete one full rotation */
+}
+
 
 /* Light Mode Styles */
 .light-mode {
@@ -103,4 +116,40 @@ button:hover {
   }
 }
 
+.gradient-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Default position for larger screens */
+  width: 100%;
+  height: 8px; /* Default thickness */
+  background: linear-gradient(264deg, #DF8908 -5.90%, #B415FF 106.28%);
+  border-radius: 8px;
+  z-index: -1;
+}
 
+/* For medium screens (tablets, 768px and above) */
+@media (max-width: 1024px) {
+  .gradient-underline::after {
+    bottom: -4px; /* Slightly closer to text */
+    height: 6px;  /* Reduce thickness */
+  }
+}
+
+/* For small screens (mobile devices, 768px and below) */
+@media (max-width: 768px) {
+  .gradient-underline::after {
+    bottom: -3px; /* Closer to text for smaller screens */
+    height: 4px;  /* Further reduce thickness */
+    border-radius: 4px; /* Adjust roundness for consistency */
+  }
+}
+
+/* For extra small screens (mobile devices, 480px and below) */
+@media (max-width: 480px) {
+  .gradient-underline::after {
+    bottom: -2px; /* Minimum distance */
+    height: 3px;  /* Minimal thickness */
+    border-radius: 2px; /* Slightly less rounded */
+  }
+}

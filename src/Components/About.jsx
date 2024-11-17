@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import profile from "../assets/images/Profile.jpg";
-import pattern from "../assets/assets/theme_pattern.svg";
+
 
 const About = () => {
   useEffect(() => {
@@ -14,14 +14,9 @@ const About = () => {
     <div id='about' className="py-6 flex flex-col items-center gap-16 px-4 lg:px-20 xl:px-40">
       {/* Title */}
       <div className="relative text-center lg:text-left" data-aos="fade-left">
-        <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold relative z-10">
+        <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold gradient-underline relative z-10">
           About Me
         </h1>
-        <img
-          src={pattern}
-          alt="Pattern"
-          className="absolute -bottom-3 right-0 hidden lg:block z-0"
-        />
       </div>
       <div className="flex justify-center lg:justify-start" data-aos="fade-up">
           <img
@@ -46,7 +41,9 @@ const About = () => {
               My expertise spans across the MERN and MEAN stacks, enabling me to build robust, scalable applications with seamless user experiences. As a highly motivated, positive, and hardworking individual, I am constantly striving to improve my knowledge and skillset. I am eager to take on a responsible role where I can apply my expertise, contribute meaningfully to the growth of my organization, and help drive its success.
             </p>
           </div>
-
+<div className='flex justify-center items-center text'>
+    <h1 className='text-3xl md:text-5xl lg:text-[80px] font-semibold relative z-10  gradient-underline transition duration-300' data-aos="fade-up">Technologies</h1>
+</div>
           {/* Skills */}
           <div className="flex flex-wrap gap-6 justify-center lg:justify-start">
           {[

@@ -3,7 +3,7 @@ import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa"; // Font
 import { HiArrowRight } from "react-icons/hi"; // Example of another icon
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import "../App.css"
 const Contacts = () => {
   const [result, setResult] = useState({ message: "", type: "" });
 
@@ -55,10 +55,10 @@ const Contacts = () => {
   };
 
   return (
-    <div id="contact" className="flex flex-col items-center justify-center gap-20 px-4 pb-10 lg:px-20 xl:px-40">
+    <div id="contact" className="flex flex-col items-center justify-center gap-20 px-4 py-16 lg:px-20 xl:px-40">
       {/* Header Section */}
       <div className="relative text-center" data-aos="fade-up">
-        <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold relative z-10">
+        <h1 className="text-3xl md:text-5xl lg:text-[80px] gradient-underline font-semibold relative z-10">
           Get in touch
         </h1>
         {/* Add pattern as background */}
@@ -132,7 +132,7 @@ const Contacts = () => {
       {/* Inline Custom Alert */}
       {result.message && (
         <div
-          className={`fixed top-24 right-5 z-[50] px-6 py-3 rounded-lg shadow-lg text-white font-medium transition-transform transform ${
+          className={`fixed top-10 right-5  px-6 py-3 rounded-lg shadow-lg text-white font-medium transition-transform transform ${
             result.type === "success"
               ? "bg-green-500"
               : result.type === "error"

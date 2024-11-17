@@ -16,6 +16,15 @@ const Hero = () => {
     });
   }, []);
 
+  // Function to handle resume download
+  const handleDownloadResume = () => {
+    const resumeUrl = "https://drive.google.com/file/d/1DEQRam1vrUmJFLGz54egbr2hbeuZaYq3/view?usp=drive_link"; // Use your modified Google Drive link
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Ram_Pandiyar_Resume.pdf"; // Optional, you can specify a filename
+    link.click();
+  };
+
   return (
     <div id="home" className="flex items-center lg:pt-14 pt-14 flex-col gap-6 px-4 lg:gap-10 lg:px-0">
       {/* Profile Image */}
@@ -48,8 +57,7 @@ const Hero = () => {
         className="w-full text-center text-base md:text-lg lg:text-[24px] leading-[1.5] md:leading-[1.8] lg:leading-[1.8] md:w-[80%] lg:w-[65%]"
         data-aos="slide-up" // Slide up animation for description
       >
-       
-I am a Front-End Developer with expertise in ReactJS, AngularJS, and Tailwind CSS. I focus on building responsive, user-friendly web applications. Motivated and eager to contribute to organizational growth while expanding my skills.
+        I am a Front-End Developer with expertise in ReactJS, AngularJS, and Tailwind CSS. I focus on building responsive, user-friendly web applications. Motivated and eager to contribute to organizational growth while expanding my skills.
       </p>
 
       {/* Buttons */}
@@ -62,7 +70,12 @@ I am a Front-End Developer with expertise in ReactJS, AngularJS, and Tailwind CS
             Connect with Me
           </div>
         </AnchorLink>
-        <div className="p-3 md:p-4 lg:p-[20px_40px] hover:scale-110 rounded-full border-2 border-white cursor-pointer hover:transition hover:duration-300 duration-300 hover:border-violet-800 hover:text-yellow-500">
+
+        {/* My Resume Button */}
+        <div
+          onClick={handleDownloadResume} // Trigger resume download
+          className="p-3 md:p-4 lg:p-[20px_40px] hover:scale-110 rounded-full border-2 border-white cursor-pointer hover:transition hover:duration-300 duration-300 hover:border-violet-800 hover:text-yellow-500"
+        >
           My Resume
         </div>
       </div>
