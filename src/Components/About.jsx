@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import profile from "../assets/images/Profile.jpg";
+import profile from "../assets/images/Profile2.jpg";
 
 
 const About = () => {
