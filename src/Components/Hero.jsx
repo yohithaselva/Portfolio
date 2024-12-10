@@ -35,31 +35,22 @@ const Hero = () => {
         data-aos="slide-up" // Slide up animation on scroll
       />
 
-      {/* Title */}
-      <h1
-        className="font-semibold text-3xl md:text-5xl lg:text-[80px] text-center w-full md:w-[80%] lg:w-[70%] min-h-[60px] md:min-h-[80px] lg:min-h-[120px]"
-        data-aos="fade-in" // Fade in animation for title
-      >
-        {/* Add browser-specific prefixes for compatibility */}
-        <span
-          className="text-transparent bg-clip-text bg-gradient-to-r to-[#DF8908] from-[#B415FF]"
-          style={{
-            WebkitBackgroundClip: "text", // For Safari/iOS
-            WebkitTextFillColor: "transparent", // For Safari/iOS
-            backgroundClip: "text", // Standard property
-            textFillColor: "transparent", // Standard property
-          }}
-        >
-          <TypingEffect
-            text="I'm Ram Pandiyar"
-            speed={100}
-            eraseDelay={1000}
-            typingDelay={500}
-            cursorRenderer={(cursor) => <h1>{cursor}</h1>}
-          />
-        </span>
-        , frontend developer based in India
-      </h1>
+<h1
+  className="font-semibold text-3xl md:text-5xl lg:text-[80px] text-center w-full md:w-[80%] lg:w-[70%] min-h-[60px] md:min-h-[80px] lg:min-h-[120px]"
+  data-aos="fade-in" // Fade in animation for title
+>
+  <span className="text-transparent bg-clip-text bg-gradient-to-r to-[#DF8908] from-[#B415FF]">
+    <TypingEffect
+      text="I'm Ram Pandiyar"
+      speed={100}
+      eraseDelay={1000}
+      typingDelay={500}
+      cursorRenderer={(cursor) => <h1>{cursor}</h1>}
+    />
+  </span>
+  , frontend developer based in India
+</h1>
+
 
       {/* Description */}
       <p
