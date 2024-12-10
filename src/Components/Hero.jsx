@@ -44,8 +44,11 @@ const Hero = () => {
         <span
           className="bg-gradient-to-r from-[#B415FF] to-[#DF8908] text-transparent bg-clip-text"
           style={{
-            WebkitBackgroundClip: "text", // Safari support
-            WebkitTextFillColor: "transparent", // Safari support
+            backgroundImage: "linear-gradient(to right, #DF8908, #B415FF)", // Cross-browser gradient
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+            textFillColor: "transparent",
           }}
         >
           <TypingEffect
