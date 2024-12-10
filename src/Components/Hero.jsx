@@ -37,10 +37,19 @@ const Hero = () => {
 
       {/* Title */}
       <h1
-        className="font-semibold text-3xl md:text-5xl lg:text-[80px] text-center w-full md:w-[80%] lg:w-[70%]"
+        className="font-semibold text-3xl md:text-5xl lg:text-[80px] text-center w-full md:w-[80%] lg:w-[70%] min-h-[60px] md:min-h-[80px] lg:min-h-[120px]"
         data-aos="fade-in" // Fade in animation for title
       >
-        <span className="text-transparent bg-clip-text bg-gradient-to-r to-[#DF8908] from-[#B415FF]">
+        {/* Add browser-specific prefixes for compatibility */}
+        <span
+          className="text-transparent bg-clip-text bg-gradient-to-r to-[#DF8908] from-[#B415FF]"
+          style={{
+            WebkitBackgroundClip: "text", // For Safari/iOS
+            WebkitTextFillColor: "transparent", // For Safari/iOS
+            backgroundClip: "text", // Standard property
+            textFillColor: "transparent", // Standard property
+          }}
+        >
           <TypingEffect
             text="I'm Ram Pandiyar"
             speed={100}
@@ -66,7 +75,16 @@ const Hero = () => {
         data-aos="slide-up" // Slide up animation for buttons
       >
         <AnchorLink offset={50} href="#contact">
-          <div className="p-3 md:p-4 lg:p-[20px_40px] hover:duration-300 duration-300 rounded-full bg-gradient-to-r to-[#DF8908] from-[#B415FF] cursor-pointer hover:scale-110">
+          <div
+            className="p-3 md:p-4 lg:p-[20px_40px] hover:duration-300 duration-300 rounded-full bg-gradient-to-r to-[#DF8908] from-[#B415FF] cursor-pointer hover:scale-110"
+            style={{
+              backgroundImage: "linear-gradient(to right, #DF8908, #B415FF)", // Ensure cross-browser gradient
+              WebkitBackgroundClip: "text", // Safari support
+              WebkitTextFillColor: "transparent", // Safari support
+              backgroundClip: "text",
+              textFillColor: "transparent",
+            }}
+          >
             Connect with Me
           </div>
         </AnchorLink>
