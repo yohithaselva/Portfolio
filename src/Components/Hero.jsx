@@ -4,6 +4,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 import profile from "../assets/images/Profile.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import TypingEffect from "react-typing-effect";
+import './hero.css'
 
 const Hero = () => {
   // Initialize AOS with custom settings

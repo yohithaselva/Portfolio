@@ -153,17 +153,4 @@ button:hover {
     border-radius: 2px; /* Slightly less rounded */
   }
 }
-@media only screen and (max-width: 812px) {
-  /* Adjust heading size and spacing for iPhone 15 */
-  h1 {
-    font-size: 2rem; /* Adjust heading size for iPhone */
-    min-height: 100px; /* Adjust height */
-  }
 
-  /* Adjust the description text size */
-  p {
-    font-size: 1rem; /* Slightly smaller description */
-    line-height: 1.6; /* Tighter line spacing */
-  }
-  
-}
