@@ -42,7 +42,7 @@ const Hero = () => {
         data-aos="fade-in" // Fade-in animation
       >
         <span
-          className="bg-gradient-to-r from-[#B415FF] to-[#DF8908] text-transparent bg-clip-text"
+          className="bg-gradient-to-r to-[#DF8908] from-[#B415FF] text-transparent bg-clip-text"
           style={{
             backgroundImage: "linear-gradient(to right, #DF8908, #B415FF)", // Cross-browser gradient
             WebkitBackgroundClip: "text",
@@ -55,7 +55,7 @@ const Hero = () => {
             text="I'm Ram Pandiyar"
             speed={100}
             eraseDelay={1000}
-            typingDelay={500}
+            typingDelay={500} 
             cursorRenderer={(cursor) => <span>{cursor}</span>}
           />
         </span>
