@@ -36,30 +36,33 @@ const Hero = () => {
         data-aos="slide-up" // Slide-up animation on scroll
       />
 
-      {/* Typing Effect Title */}
-      <h1
-        className="font-semibold text-3xl md:text-5xl lg:text-[80px] text-center w-full md:w-[80%] lg:w-[70%] min-h-[80px] md:min-h-[100px] lg:min-h-[140px]"
-        data-aos="fade-in" // Fade-in animation
-      >
-        <span className="text-gradient" style={{
-          background: "linear-gradient(to right, #DF8908, #B415FF)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-          MozBackgroundClip: "text", // For older Firefox versions
-          MozTextFillColor: "transparent", // For older Firefox versions
-          color: "#000" // Fallback for browsers that don't support background-clip
-        }}>
-          <TypingEffect
-            text="I'm Ram Pandiyar"
-            speed={100}
-            eraseDelay={1000}
-            typingDelay={500} 
-            cursorRenderer={(cursor) => <span>{cursor}</span>}
-          />
-        </span>
-        , frontend developer based in India
-      </h1>
-
+<h1
+  className="font-semibold text-3xl md:text-5xl lg:text-[80px] text-center w-full md:w-[80%] lg:w-[70%] min-h-[80px] md:min-h-[100px] lg:min-h-[140px]"
+  data-aos="fade-in"
+>
+  <span
+    className="bg-gradient-to-r to-[#DF8908] from-[#B415FF] text-transparent bg-clip-text"
+    style={{
+      backgroundImage: "linear-gradient(to right, #DF8908, #B415FF)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+      backgroundClip: "text",
+      textFillColor: "transparent",
+      color: "#B415FF", // Fallback color for Safari
+    }}
+  >
+    {/* Test without TypingEffect */}
+    I&apos;m Ram Pandiyar
+    {/* <TypingEffect
+      text="I'm Ram Pandiyar"
+      speed={100}
+      eraseDelay={1000}
+      typingDelay={500}
+      cursorRenderer={(cursor) => <span>{cursor}</span>}
+    /> */}
+  </span>
+  , frontend developer based in India
+</h1>
       {/* Description */}
       <p
         className="w-full text-center text-base md:text-lg lg:text-[24px] leading-[1.5] md:leading-[1.8] lg:leading-[1.8] md:w-[80%] lg:w-[65%]"
@@ -77,6 +80,13 @@ const Hero = () => {
         <AnchorLink offset={50} href="#contact">
           <div
             className="p-3 md:p-4 lg:p-[20px_40px] hover:duration-300 duration-300 rounded-full bg-gradient-to-r to-[#DF8908] from-[#B415FF] cursor-pointer hover:scale-110"
+            style={{
+              backgroundImage: "linear-gradient(to right, #DF8908, #B415FF)", // Cross-browser gradient
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+              textFillColor: "transparent",
+            }}
           >
             Connect with Me
           </div>
