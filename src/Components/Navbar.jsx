@@ -54,7 +54,10 @@ const Navbar = () => {
 
           {/* Mobile Menu Toggle */}
           <div className="md:hidden">
-            <button onClick={toggleMenu} className="text-white focus:outline-none">
+            <button
+              onClick={toggleMenu}
+              className="text-white focus:outline-none"
+            >
               <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                 {isOpen ? (
                   <path
@@ -76,7 +79,10 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center gap-12 text-lg">
             {["home", "about", "work", "contact"].map((section) => (
-              <li key={section} className="flex flex-col gap-1 cursor-pointer hover:scale-105 transition-transform duration-300">
+              <li
+                key={section}
+                className="flex flex-col gap-1 cursor-pointer hover:scale-105 transition-transform duration-300"
+              >
                 <AnchorLink
                   href={`#${section}`}
                   offset="80" // Add offset for the scroll position
@@ -84,20 +90,34 @@ const Navbar = () => {
                 >
                   <p>{section.charAt(0).toUpperCase() + section.slice(1)}</p>
                 </AnchorLink>
-                {menu === section && <img src={underline} alt="" className="m-auto" />}
+                {menu === section && (
+                  <img src={underline} alt="" className="m-auto" />
+                )}
               </li>
             ))}
           </ul>
 
           {/* Social Media Icons */}
           <div className="flex gap-6 items-center lg:">
-            <a href="https://www.linkedin.com/in/ram-pandiyar-109212299/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/ram-pandiyar-109212299/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin className="text-gray-400 opacity-70 hover:text-blue-600 hover:opacity-100 transition-all duration-300 text-2xl" />
             </a>
-            <a href="https://github.com/Rampandiyar" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/Rampandiyar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="text-gray-400 opacity-70 hover:text-white hover:opacity-100 transition-all duration-300 text-2xl" />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/itsmeram_rp?igsh=MWhjYmNvNXBkbjRlcQ%3D%3D&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram className="text-gray-400 opacity-70 hover:text-pink-600 hover:opacity-100 transition-all duration-300 text-2xl" />
             </a>
           </div>
@@ -111,7 +131,10 @@ const Navbar = () => {
           className="md:hidden flex flex-col mt-20 items-center gap-4 text-lg transition-all duration-500 w-full py-4"
         >
           {["home", "about", "work", "contact"].map((section) => (
-            <li key={section} className="flex flex-col gap-1 cursor-pointer hover:scale-105 transition-transform duration-300">
+            <li
+              key={section}
+              className="flex flex-col gap-1 cursor-pointer hover:scale-105 transition-transform duration-300"
+            >
               <AnchorLink
                 href={`#${section}`}
                 offset="80" // Add offset for smooth scrolling
@@ -122,7 +145,9 @@ const Navbar = () => {
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </AnchorLink>
-              {menu === section && <img src={underline} alt="" className="m-auto" />}
+              {menu === section && (
+                <img src={underline} alt="" className="m-auto" />
+              )}
             </li>
           ))}
         </animated.ul>

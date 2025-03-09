@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import profile from "../assets/images/Profile.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import TypingEffect from "react-typing-effect";
-import './hero.css';
+import "./hero.css";
 
 const Hero = () => {
   useEffect(() => {
@@ -15,7 +15,8 @@ const Hero = () => {
   }, []);
 
   const handleDownloadResume = () => {
-    const resumeUrl = "https://drive.google.com/file/d/1DEQRam1vrUmJFLGz54egbr2hbeuZaYq3/view?usp=drive_link";
+    const resumeUrl =
+      "https://drive.google.com/file/d/1DEQRam1vrUmJFLGz54egbr2hbeuZaYq3/view?usp=drivesdk";
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.download = "Ram_Pandiyar_Resume.pdf";
@@ -23,7 +24,10 @@ const Hero = () => {
   };
 
   return (
-    <div id="home" className="flex items-center lg:pt-14 pt-14 flex-col gap-6 px-4 lg:gap-10 lg:px-0">
+    <div
+      id="home"
+      className="flex items-center lg:pt-14 pt-14 flex-col gap-6 px-4 lg:gap-10 lg:px-0"
+    >
       {/* Profile Image */}
       <img
         src={profile}
@@ -64,7 +68,10 @@ const Hero = () => {
         className="w-full text-center text-base md:text-lg lg:text-[24px] leading-[1.5] md:leading-[1.8] lg:leading-[1.8] md:w-[80%] lg:w-[65%]"
         data-aos="slide-up"
       >
-        I am a Front-End Developer with expertise in ReactJS, AngularJS, and Tailwind CSS. I focus on building responsive, user-friendly web applications. Motivated and eager to contribute to organizational growth while expanding my skills.
+        I am a Front-End Developer with expertise in ReactJS, AngularJS, and
+        Tailwind CSS. I focus on building responsive, user-friendly web
+        applications. Motivated and eager to contribute to organizational growth
+        while expanding my skills.
       </p>
 
       {/* Buttons */}
